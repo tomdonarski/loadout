@@ -10,10 +10,22 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2021_07_28_110236) do
+ActiveRecord::Schema.define(version: 2021_07_28_110436) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
+
+  create_table "attachments", force: :cascade do |t|
+    t.string "name", null: false
+    t.float "accuracy_modifier", default: 0.0, null: false
+    t.float "range_modifier", default: 0.0, null: false
+    t.float "damage_modifier", default: 0.0, null: false
+    t.float "fire_rate_modifier", default: 0.0, null: false
+    t.float "mobility_modifier", default: 0.0, null: false
+    t.float "control_modifier", default: 0.0, null: false
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+  end
 
   create_table "weapons", force: :cascade do |t|
     t.string "name", null: false
