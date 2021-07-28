@@ -1,7 +1,18 @@
-# This file should contain all the record creation needed to seed the database with its default values.
-# The data can then be loaded with the bin/rails db:seed command (or created alongside the database with db:setup).
-#
-# Examples:
-#
-#   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
-#   Character.create(name: 'Luke', movie: movies.first)
+Weapon.create!(name: 'Krig 6', accuracy: 65, range: 7, damage: 6, fire_rate: 110, mobility: 7, control: 65)
+Weapon.create!(name: 'Kilo 141', accuracy: 6, range: 7, damage: 6, fire_rate: 115, mobility: 75, control: 7)
+Weapon.create!(name: 'Fara 83', accuracy: 65, range: 7, damage: 6, fire_rate: 130, mobility: 8, control: 75)
+Weapon.create!(name: 'AK-47', accuracy: 55, range: 7, damage: 6, fire_rate: 105, mobility: 8, control: 8)
+Weapon.create!(name: 'M4A1', accuracy: 55, range: 7, damage: 6, fire_rate: 100, mobility: 7, control: 7)
+Weapon.create!(name: 'XM4', accuracy: 5, range: 7, damage: 6, fire_rate: 120, mobility: 9, control: 9)
+Weapon.create!(name: 'LW3 Tundra', accuracy: 8, range: 9, damage: 85, fire_rate: 15, mobility: 6, control: 5)
+Weapon.create!(name: 'Kar98k', accuracy: 75, range: 85, damage: 8, fire_rate: 20, mobility: 65, control: 6)
+Attachment.create!(name: 'Lightweight Suppressor', attachment_type: 'muzzle', accuracy_modifier: 15, range_modifier: -1, damage_modifier: -1, fire_rate_modifier: 0, mobility_modifier: 0, control_modifier: 0)
+Attachment.create!(name: 'Flash Guard', attachment_type: 'muzzle', accuracy_modifier: 5, range_modifier: -5, damage_modifier: -15, fire_rate_modifier: 0, mobility_modifier: 0, control_modifier: 0)
+Attachment.create!(name: 'Granulated Grip Tape', attachment_type: 'rear_grip', accuracy_modifier: 1, range_modifier: 0, damage_modifier: 0, fire_rate_modifier: 0, mobility_modifier: 0, control_modifier: 15)
+Attachment.create!(name: 'Rubberized Grip Tape', attachment_type: 'rear_grip', accuracy_modifier: 1, range_modifier: 0, damage_modifier: 0, fire_rate_modifier: 0, mobility_modifier: 0, control_modifier: 2)
+Attachment.create!(name: 'No Stock', attachment_type: 'stock', accuracy_modifier: -1, range_modifier: 0, damage_modifier: 0, fire_rate_modifier: 0, mobility_modifier: 3, control_modifier: -15)
+Attachment.create!(name: 'Corp Combat Holo Sight', attachment_type: 'optics', accuracy_modifier: 25, range_modifier: 0, damage_modifier: 0, fire_rate_modifier: 0, mobility_modifier: 0, control_modifier: 0)
+Attachment.create!(name: 'APX5 Holographic Sight', attachment_type: 'optics', accuracy_modifier: 3, range_modifier: 0, damage_modifier: 0, fire_rate_modifier: 0, mobility_modifier: 0, control_modifier: 0)
+Attachment.create!(name: 'Singuard Arms 16.6 SOCOM', attachment_type: 'barrel', accuracy_modifier: -1, range_modifier: 35, damage_modifier: 2, fire_rate_modifier: 0, mobility_modifier: 0, control_modifier: 0)
+Attachment.create!(name: 'Singuard Arms 19.8 Prowler', attachment_type: 'barrel', accuracy_modifier: -2, range_modifier: 2, damage_modifier: 35, fire_rate_modifier: 0, mobility_modifier: 0, control_modifier: 0)
+Attachment.create!(name: '45 Round Mag', attachment_type: 'magazine', accuracy_modifier: 0, range_modifier: 0, damage_modifier: 0, fire_rate_modifier: 15, mobility_modifier: -1, control_modifier: 0)
